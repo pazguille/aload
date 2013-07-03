@@ -1,6 +1,6 @@
 {
-  "name": "all-async",
-  "repo": "pazguille/all-async",
+  "name": "asyncall",
+  "repo": "pazguille/asyncall",
   "description": "Loads images, scripts, styles, iframes and more asynchronously with vanilla JavaScript.",
   "version": "0.0.1",
   "keywords": [],
