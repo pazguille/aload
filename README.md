@@ -1,3 +1,3 @@
 # Async Call
 
-Loads images, scripts, styles, iframes and more asynchronously with vanilla JavaScript.
+Loads images, scripts, styles, iframes, videos, audios and more... asynchronously!
