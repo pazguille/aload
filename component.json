@@ -1,13 +1,25 @@
 {
   "name": "asyncall",
   "repo": "pazguille/asyncall",
-  "description": "Loads images, scripts, styles, iframes, videos, audios and more... asynchronously!",
-  "version": "0.0.1",
-  "keywords": [],
+  "description": "Loads images, scripts, styles and more... asynchronously!",
+  "version": "0.0.2",
+  "author": "Guille Paz <guille87paz@gmail.com>",
+  "twitter": "@pazguille",
+  "keywords": [
+    "image",
+    "script",
+    "iframe",
+    "style",
+    "video",
+    "audio",
+    "async",
+    "lazy"
+  ],
   "dependencies": {},
-  "development": {},
+  "development": {
+    "bestander/jasmine": "*"
+  },
   "license": "MIT",
-  "main": "index.js",
   "scripts": [
     "index.js"
   ]
