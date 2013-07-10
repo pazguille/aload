@@ -40,7 +40,7 @@ You should use the following HTML code:
 
 #### IFRAME
 ```html
-<iframe data-async="http://foobar.com"></iframe>
+<iframe data-async="http://foobar.com" src="about:blank"></iframe>
 ```
 
 #### VIDEO
