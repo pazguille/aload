@@ -28,7 +28,7 @@ You should use the following HTML code:
 
 #### SCRIPT
 ```html
-<script data-async="http://foobar.com/foo.js" src="about:blank"></script>
+<script data-async="http://foobar.com/foo.js"></script>
 ```
 
 #### LINK (styles)
@@ -40,17 +40,17 @@ You should use the following HTML code:
 
 #### IFRAME
 ```html
-<iframe data-async="http://foobar.com" src="about:blank"></iframe>
+<iframe data-async="http://foobar.com"></iframe>
 ```
 
 #### VIDEO
 ```html
-<video data-async="http://foobar.com/bar.mp4" src="about:blank" controls></video>
+<video data-async="http://foobar.com/bar.mp4" controls></video>
 ```
 
 #### AUDIO
 ```html
-<audio data-async="http://foobar.com/foo.mp3" src="about:blank" controls></audio>
+<audio data-async="http://foobar.com/foo.mp3" controls></audio>
 ```
 
 - `data-async` - URL of the source.
