@@ -7,6 +7,10 @@ module = module.exports = function (nodes) {
 
     nodes = nodes || window.document.querySelectorAll('[data-async]');
 
+    if (nodes.length === undefined) {
+         nodes = [nodes];
+    }
+
     var i = 0,
         len = nodes.length,
         src,
