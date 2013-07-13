@@ -11,7 +11,7 @@ var aload = require('aload'),
     img = document.querySelector('img'),
     loadEvent = jasmine.createSpy('loadEvent');
 
-describe('aload', function () {
+describe('aload()', function () {
 
     it('should be defined', function () {
         expect(aload).toBeDefined();
@@ -22,7 +22,7 @@ describe('aload', function () {
     });
 });
 
-describe('When you use aload on an image', function () {
+describe('Image', function () {
 
     it('shouldn\'t have "src" attibute', function () {
         expect(img.src).toEqual('');
@@ -52,5 +52,4 @@ describe('When you use aload on an image', function () {
             return loadEvent.callCount > 0;
         });
     });
-
 });
