@@ -13,6 +13,7 @@
     "video",
     "audio",
     "async",
+    "load",
     "lazy"
   ],
   "dependencies": {},
