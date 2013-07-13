@@ -7,22 +7,22 @@
     }
 }(window));
 
-var asyncall = require('asyncall'),
+var aload = require('aload'),
     img = document.querySelector('img'),
     loadEvent = jasmine.createSpy('loadEvent');
 
-describe('asyncall', function () {
+describe('aload', function () {
 
     it('should be defined', function () {
-        expect(asyncall).toBeDefined();
+        expect(aload).toBeDefined();
     });
 
     it('should be a function', function () {
-        expect(typeof asyncall).toEqual('function');
+        expect(typeof aload).toEqual('function');
     });
 });
 
-describe('When you use asyncall on an image', function () {
+describe('When you use aload on an image', function () {
 
     it('shouldn\'t have "src" attibute', function () {
         expect(img.src).toEqual('');
@@ -31,7 +31,7 @@ describe('When you use asyncall on an image', function () {
     it('should set "src" attibute', function () {
         var src = img.getAttribute('data-async');
 
-        asyncall(img);
+        aload(img);
 
         expect(img.src).not.toEqual('');
 

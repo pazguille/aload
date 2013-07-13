@@ -1,17 +1,17 @@
-# Async Call
+# Async Load
 
 Loads images, scripts, styles, iframes, videos and audios asynchronously.
 
 ## Installation
 
-    $ component install pazguille/asyncall
+    $ component install pazguille/aload
 
 See: [https://github.com/component/component](https://github.com/component/component)
 
 ### Standalone
 Also, you can use the standalone version:
 ```html
-<script src="standalone/asyncall.js"></script>
+<script src="standalone/aload.js"></script>
 ```
 
 ## How-to
@@ -55,9 +55,9 @@ You should use the following HTML code:
 
 - `data-async` - URL of the source.
 
-Then, require the `asyncall` component (avoid this step if you use the standalone version):
+Then, require the `aload` component (avoid this step if you use the standalone version):
 ```js
-var asyncall = require('asyncall');
+var aload = require('aload');
 ```
 
 Now, you can start to load your images, scripts, styles, iframes, videos and audios asynchronously!
@@ -65,7 +65,7 @@ Now, you can start to load your images, scripts, styles, iframes, videos and aud
 ```js
 // Onload
 window.onload = function () {
-    asyncall();
+    aload();
 };
 ```
 
@@ -93,12 +93,12 @@ For example, to show images when JavaScript is not enabled you should include th
 ```
 
 ## API
-### asyncall([nodeList])
+### aload([nodeList])
 Loads images, scripts, styles, iframes, videos and audios asynchronously.
 - `nodeList` {NodeList} [optional] - A NodeList of elements. By default, it is the result of `querySelectorAll('[data-async]')`.
 
 ```js
-asyncall();
+aload();
 ```
 
 ## Contact

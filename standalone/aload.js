@@ -6,7 +6,7 @@
      * @param {NodeList} [nodes] - A NodeList of elements. By default, it is the result of `querySelectorAll('[data-async]'.
      * @returns {NodeList}
      */
-    function asyncall(nodes) {
+    function aload(nodes) {
 
         nodes = nodes || window.document.querySelectorAll('[data-async]');
 
@@ -34,17 +34,17 @@
      */
     // AMD suppport
     if (typeof window.define === 'function' && window.define.amd !== undefined) {
-        window.define('asyncall', [], function () {
-            return asyncall;
+        window.define('aload', [], function () {
+            return aload;
         });
 
     // CommonJS suppport
     } else if (typeof module !== 'undefined' && module.exports !== undefined) {
-        module.exports = asyncall;
+        module.exports = aload;
 
     // Default
     } else {
-        window.asyncall = asyncall;
+        window.aload = aload;
     }
 
 }(this));

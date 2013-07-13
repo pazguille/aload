@@ -1,8 +1,8 @@
 {
-  "name": "asyncall",
-  "repo": "pazguille/asyncall",
+  "name": "aload",
+  "repo": "pazguille/aload",
   "description": "Loads images, scripts, styles and more asynchronously.",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "author": "Guille Paz <guille87paz@gmail.com>",
   "twitter": "@pazguille",
   "keywords": [
