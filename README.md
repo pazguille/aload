@@ -16,15 +16,32 @@ Also, you can use the standalone version:
 
 ## How-to
 
-You should use the following HTML code:
+You should use the following HTML code (an image for example):
 
-#### IMG
 ```html
 <ing data-async="http://foo.bar.com"
      src="http://foo.bar.com/foobar.png"
      width="400"
      height="300">
 ```
+
+- `data-async` - URL of the source.
+
+Then, require the `aload` component (avoid this step if you use the standalone version):
+```js
+var aload = require('aload');
+```
+
+Now, you can start to load your image asynchronously!
+
+```js
+// Onload
+window.onload = function () {
+    aload();
+};
+```
+
+### You can load images, scripts, styles, iframes, videos and audio.
 
 #### SCRIPT
 ```html
@@ -33,9 +50,7 @@ You should use the following HTML code:
 
 #### LINK (styles)
 ```html
-<link data-async="http://foobar.com/foo.js"
-      href="about:blank"
-      rel="stylesheet">
+<link data-async="http://foobar.com/foo.js" rel="stylesheet">
 ```
 
 #### IFRAME
@@ -51,22 +66,6 @@ You should use the following HTML code:
 #### AUDIO
 ```html
 <audio data-async="http://foobar.com/foo.mp3" controls></audio>
-```
-
-- `data-async` - URL of the source.
-
-Then, require the `aload` component (avoid this step if you use the standalone version):
-```js
-var aload = require('aload');
-```
-
-Now, you can start to load your images, scripts, styles, iframes, videos and audios asynchronously!
-
-```js
-// Onload
-window.onload = function () {
-    aload();
-};
 ```
 
 ### Progressive Enhancement
