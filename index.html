@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Async Load Component.</title>
-        <link id="async-link" data-async="http://24.media.tumblr.com/tumblr_lxa8dsfv6D1r7yvmwo1_400.gif" rel="stylesheet">
+        <link id="async-link" data-async="src/cat.css" rel="stylesheet">
         <style>
             body {
                 font-family: "Helvetica Neue", Helvetica, Arial, serif;
@@ -24,6 +24,7 @@
                 list-style: none;
                 margin: 70px 0;
                 padding: 0;
+                overflow: hidden;
             }
 
             li {
@@ -48,6 +49,8 @@
                 font-size: 16px;
                 cursor: pointer;
                 z-index: 1;
+                background-color: #bdc3c7;
+                border: 1px solid #bdc3c7;
             }
 
             img,
@@ -96,7 +99,7 @@
             <li>
                 <h3>Script</h3>
                 <button id="script">Load!</button>
-                <script id="async-script" data-async="http://24.media.tumblr.com/tumblr_lxa8dsfv6D1r7yvmwo1_400.gif"></script>
+                <script id="async-script" data-async="src/cat.js"></script>
             </li>
             <li>
                 <h3>Style</h3>
@@ -104,24 +107,28 @@
             </li>
         </ul>
 
-        <a href="https://github.com/pazguille/aload"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
+        <a href="https://github.com/pazguille/aload"><img id="fork" style="position: absolute; top: 0; left: 0; border: 0;" data-async="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
 
-        <script src="http://code.jquery.com/jquery-latest.js"></script>
         <script src="build/build.js"></script>
         <script>
-            var aload = require('aload');
-                btns = document.getElementsByTagName('button'),
-                len = 6;
+            window.onload = function () {
 
-            function loads () {
-                aload(document.getElementById('async-' + this.id ));
-                this.className = 'hide';
-            }
+                var aload = require('aload');
+                    btns = document.getElementsByTagName('button'),
+                    len = 6;
 
-            while (len) {
-                len -= 1;
-                btns[len].onclick = loads;
-            }
+                aload(document.getElementById('fork'));
+
+                function loads () {
+                    aload(document.getElementById('async-' + this.id ));
+                    this.className = 'hide';
+                }
+
+                while (len) {
+                    len -= 1;
+                    btns[len].onclick = loads;
+                }
+            };
 
         </script>
     </body>
