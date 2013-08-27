@@ -55,7 +55,7 @@ window.onload = function () {
 
 #### IFRAME
 ```html
-<iframe data-async="http://foobar.com" src="about:blank"></iframe>
+<iframe data-async="http://foobar.com" src="javascript:false"></iframe>
 ```
 
 #### VIDEO
