@@ -19,7 +19,7 @@ Also, you can use the standalone version:
 You should use the following HTML code (an image for example):
 
 ```html
-<ing data-async="http://foo.bar.com"
+<img data-async="http://foo.bar.com"
      src="http://foo.bar.com/foobar.png"
      width="400"
      height="300">
