@@ -1,5 +1,5 @@
 
-build: components index.js
+build: components
 	@component build --dev
 
 components: component.json
@@ -7,5 +7,8 @@ components: component.json
 
 clean:
 	rm -fr build components template.js
+
+test: build
+	open test/index.html
 
 .PHONY: clean

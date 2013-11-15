@@ -21,7 +21,6 @@
     "bestander/jasmine": "*"
   },
   "license": "MIT",
-  "scripts": [
-    "index.js"
-  ]
+  "main": "aload.js",
+  "scripts": ["aload.js"]
 }

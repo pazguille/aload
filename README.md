@@ -2,18 +2,6 @@
 
 Loads images, scripts, styles, iframes, videos and audios asynchronously.
 
-## Installation
-
-    $ component install pazguille/aload
-
-See: [https://github.com/component/component](https://github.com/component/component)
-
-### Standalone
-Also, you can use the standalone version:
-```html
-<script src="standalone/aload.js"></script>
-```
-
 ## How-to
 
 You should use the following HTML code (an image for example):
@@ -107,4 +95,6 @@ aload();
 - Web: [http://pazguille.me](http://pazguille.me)
 
 ## License
-Copyright (c) 2013 [@pazguille](http://twitter.com/pazguille) Licensed under the MIT license.
+Licensed under the MIT license.
+
+Copyright (c) 2013 [@pazguille](http://twitter.com/pazguille).
