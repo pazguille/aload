@@ -15,11 +15,6 @@ You should use the following HTML code (an image for example):
 
 - `data-async` - URL of the source.
 
-Then, require the `aload` component (avoid this step if you use the standalone version):
-```js
-var aload = require('aload');
-```
-
 Now, you can start to load your image asynchronously!
 
 ```js
