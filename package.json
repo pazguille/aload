@@ -3,17 +3,23 @@
   "version": "1.0.0",
   "description": "Loads images, scripts, styles, iframes, videos and audios asynchronously.",
   "author": "<guille87paz@gmail.com>",
-  "contributors": [{
-    "name": "Guille Paz",
-    "email": "guille87paz@gmail.com"
-  }],
+  "contributors": [
+    {
+      "name": "Guille Paz",
+      "email": "guille87paz@gmail.com"
+    }
+  ],
   "scripts": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/pazguille/aload.git"
   },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "~3.2.2",
+    "gulp-uglify": "~0.1.0",
+    "gulp-rename": "~0.2.1"
+  },
   "license": "MIT",
   "engine": "node >= 0.8.6"
 }
