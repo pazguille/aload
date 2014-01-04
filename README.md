@@ -7,10 +7,7 @@ Loads images, scripts, styles, iframes, videos and audios asynchronously.
 You should use the following HTML code (an image for example):
 
 ```html
-<img data-async="http://foo.bar.com"
-     src="http://foo.bar.com/foobar.png"
-     width="400"
-     height="300">
+<img data-async="http://foobar.com/foo.png" width="400" height="300">
 ```
 
 - `data-async` - URL of the source.
