@@ -66,7 +66,7 @@ module.exports = function (grunt) {
         'jasmine': {
             'src': ['dist/aload.js'],
             'options': {
-                'specs': ['tests/spec.js'],
+                'specs': ['test/spec.js'],
                 'version': '1.3.1'
             }
         }
