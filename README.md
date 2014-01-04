@@ -1,4 +1,4 @@
-# Async Load
+# aload.js [![Build Status](https://secure.travis-ci.org/pazguille/aload.png)](http://travis-ci.org/pazguille/aload) [![devDependency Status](https://david-dm.org/pazguille/aload/dev-status.png)](https://david-dm.org/pazguille/aload#info=devDependencies)
 
 Loads images, scripts, styles, iframes, videos and audios asynchronously.
 
@@ -80,7 +80,7 @@ Loads images, scripts, styles, iframes, videos and audios asynchronously.
 aload();
 ```
 
-## Contact
+## Maintained by
 - Guille Paz (Frontend developer - JavaScript developer | Web standards lover)
 - E-mail: [guille87paz@gmail.com](mailto:guille87paz@gmail.com)
 - Twitter: [@pazguille](http://twitter.com/pazguille)
