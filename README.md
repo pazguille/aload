@@ -1,6 +1,6 @@
 # aload.js [![Build Status](https://secure.travis-ci.org/pazguille/aload.png)](http://travis-ci.org/pazguille/aload) [![devDependency Status](https://david-dm.org/pazguille/aload/dev-status.png)](https://david-dm.org/pazguille/aload#info=devDependencies)
 
-Loads images, scripts, styles, iframes, videos and audios asynchronously.
+> Loads images, scripts, styles, iframes, videos and audios asynchronously.
 
 ## How-to
 
