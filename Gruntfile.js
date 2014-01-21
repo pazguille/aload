@@ -76,14 +76,12 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-jslint');
-    grunt.loadNpmTasks('grunt-jsdoc');
     grunt.loadNpmTasks('grunt-contrib-jasmine');
 
     // Resgister task(s).
     grunt.registerTask('default', []);
     grunt.registerTask('test', ['concat', 'jasmine']);
     grunt.registerTask('lint', ['concat', 'jslint']);
-    grunt.registerTask('doc', ['concat', 'jsdoc']);
     grunt.registerTask('dev', ['concat']);
     grunt.registerTask('dist', ['concat', 'uglify']);
 };
