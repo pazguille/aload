@@ -30,7 +30,7 @@ window.onload = function () {
 
 #### LINK (styles)
 ```html
-<link data-async="http://foobar.com/foo.js" rel="stylesheet">
+<link data-async="http://foobar.com/foo.css" rel="stylesheet">
 ```
 
 #### IFRAME
