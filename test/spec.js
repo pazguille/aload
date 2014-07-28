@@ -2,7 +2,7 @@ window.onload = function () {
 
     function createHTML() {
         var img = document.createElement('img');
-        img.setAttribute('data-async', 'http://images5.fanpop.com/image/photos/24900000/kanzeon-cats-24910376-800-600.jpg');
+        img.setAttribute('data-aload', 'http://images5.fanpop.com/image/photos/24900000/kanzeon-cats-24910376-800-600.jpg');
         document.body.appendChild(img);
     }
 
@@ -27,7 +27,7 @@ window.onload = function () {
         });
 
         it('should set "src" attibute', function () {
-            var src = img.getAttribute('data-async');
+            var src = img.getAttribute('data-aload');
 
             aload(img);
 
@@ -36,8 +36,8 @@ window.onload = function () {
             expect(img.src).toEqual(src);
         });
 
-        it('should remove "data-async" attibute', function () {
-            expect(img.getAttribute('data-async')).toBe(null);
+        it('should remove "data-aload" attibute', function () {
+            expect(img.getAttribute('data-aload')).toBe(null);
         });
 
         it('should load the image', function () {
