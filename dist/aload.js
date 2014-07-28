@@ -1,5 +1,5 @@
 /*!
- * aload.js v1.1.0
+ * aload.js v1.1.1
  *
  * Copyright (c) 2014, @pazguille
  * Released under the MIT license.
