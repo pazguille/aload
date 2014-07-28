@@ -1,21 +1,14 @@
 {
   "name": "aload",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Loads images, scripts, styles, iframes, videos and audios asynchronously.",
   "author": "@pazguille <guille87paz@gmail.com>",
-  "contributors": [{
-    "name": "Guille Paz",
-    "email": "guille87paz@gmail.com"
-  }],
   "scripts": {
     "start": "grunt dev",
     "dist": "grunt dist",
     "test": "grunt test"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pazguille/aload.git"
-  },
+  "repository": "git@github.com:pazguille/aload.git",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -24,6 +17,11 @@
     "grunt-contrib-concat": "0.3.0",
     "grunt-contrib-uglify": "0.2.2"
   },
-  "license": "MIT",
-  "engine": "node >= 0.8.6"
+  "keywords": [
+    "aload",
+    "asynchronously",
+    "async",
+    "performance"
+  ],
+  "license": "MIT"
 }
