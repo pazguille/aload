@@ -3,12 +3,12 @@
 
     /**
      * Loads images, scripts, styles, iframes, videos and audios asynchronously.
-     * @param {NodeList} [nodes] - A NodeList of elements. By default, it is the result of `querySelectorAll('[data-async]')`.
+     * @param {NodeList} [nodes] - A NodeList of elements. By default, it is the result of `querySelectorAll('[data-aload]')`.
      * @returns {NodeList}
      */
     function aload(nodes) {
 
-        nodes = nodes || window.document.querySelectorAll('[data-async]');
+        nodes = nodes || window.document.querySelectorAll('[data-aload]');
 
         if (nodes.length === undefined) {
             nodes = [nodes];
@@ -22,15 +22,15 @@
         for (i; i < len; i += 1) {
             node = nodes[i];
             src = (node.tagName) !== 'LINK' ? 'src' : 'href';
-            node[src] = node.getAttribute('data-async');
-            node.removeAttribute('data-async');
+            node[src] = node.getAttribute('data-aload');
+            node.removeAttribute('data-aload');
         }
 
         return nodes;
     }
 
     /**
-     * Expose Aload
+     * Expose aload
      */
     // AMD suppport
     if (typeof window.define === 'function' && window.define.amd !== undefined) {
