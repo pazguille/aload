@@ -15,27 +15,27 @@ aload();
 
 1. You should add `aload` function (just 314 bytes) inline into your HTML file:
 
-```js
-<script>
-function aload(a){"use strict";a=a||window.document.querySelectorAll("[data-aload]"),void 0===a.length&&(a=[a]);var b,c=0,d=a.length;for(c;d>c;c+=1)b=a[c],b["LINK"!==b.tagName?"src":"href"]=b.getAttribute("data-aload"),b.removeAttribute("data-aload");return a}
-</script>
-```
+  ```html
+  <script>
+  function aload(a){"use strict";a=a||window.document.querySelectorAll("[data-aload]"),void 0===a.length&&(a=[a]);var b,c=0,d=a.length;for(c;d>c;c+=1)b=a[c],b["LINK"!==b.tagName?"src":"href"]=b.getAttribute("data-aload"),b.removeAttribute("data-aload");return a}
+  </script>
+  ```
 
 2. You should use `data-aload` attributes instead of `src` or `href` in your HTML tags (an image for example):
 
-```html
-<img data-aload="http://foobar.com/foo.png" width="400" height="300">
-```
-- `data-aload` - URL of the source.
+  ```html
+  <img data-aload="http://foobar.com/foo.png" width="400" height="300">
+  ```
+  - `data-aload` - URL of the source.
 
 3. Now, you can start to load your images asynchronously!
 
-```js
-// Onload
-window.onload = function () {
-  aload();
-};
-```
+  ```js
+  // Onload
+  window.onload = function () {
+    aload();
+  };
+  ```
 
 ### You can load everything asynchronously.
 
@@ -55,63 +55,69 @@ window.onload = function () {
 
 1. You must add the following CSS snippet.
 
-```css
-[data-aload] { background-image: none !important; }
-```
+  ```css
+  [data-aload] { background-image: none !important; }
+  ```
 
 2. Your own CSS.
 
-```css
-.foo {
-  background: url('http://foobar.com/foobar.png');
-}
-```
+  ```css
+  .foo {
+    background: url('http://foobar.com/foobar.png');
+  }
+  ```
 
 3. In your HTML.
 
-```html
-<div data-aload class="foo"></div>
-```
+  ```html
+  <div data-aload class="foo"></div>
+  ```
 
 #### SCRIPT
-```html
-<script data-aload="http://foobar.com/foo.js"></script>
-```
+
+  ```html
+  <script data-aload="http://foobar.com/foo.js"></script>
+  ```
 
 #### LINK (styles)
-```html
-<link data-aload="http://foobar.com/foo.css" rel="stylesheet">
-```
+
+  ```html
+  <link data-aload="http://foobar.com/foo.css" rel="stylesheet">
+  ```
 
 #### IFRAME
-```html
-<iframe data-aload="http://foobar.com" src="javascript:false"></iframe>
-```
+
+  ```html
+  <iframe data-aload="http://foobar.com" src="javascript:false"></iframe>
+  ```
 
 #### VIDEO
-```html
-<video data-aload="http://foobar.com/bar.mp4" controls></video>
-```
+
+  ```html
+  <video data-aload="http://foobar.com/bar.mp4" controls></video>
+  ```
 
 #### AUDIO
-```html
-<audio data-aload="http://foobar.com/foo.mp3" controls></audio>
-```
+
+  ```html
+  <audio data-aload="http://foobar.com/foo.mp3" controls></audio>
+  ```
 
 ### Progressive Enhancement
 If you are a front-end developer you must know about [Progressive enhancement]('http://alistapart.com/article/understandingprogressiveenhancement').
 Progressive enhancement focuses on the content and it must be showed without JavaScript.
 
 For example, to show images when JavaScript is not enabled you should include the images inside `<noscript>` tag.
-```html
-<img data-aload="http://foobar.com/foo.png"
-     src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-     width="400"
-     height="300">
-<noscript>
-    <img src="http://foobar.com/foo.png" width="400" height="300">
-</noscript>
-```
+
+  ```html
+  <img data-aload="http://foobar.com/foo.png"
+       src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+       width="400"
+       height="300">
+  <noscript>
+      <img src="http://foobar.com/foo.png" width="400" height="300">
+  </noscript>
+  ```
 
 ## Development
 1. Install [Git](http://git-scm.com/) and [NodeJS](http://nodejs.org/).
