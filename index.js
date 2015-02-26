@@ -3,7 +3,7 @@
  * @param {NodeList} [nodes] - A NodeList of elements. By default, it is the result of `querySelectorAll('[data-aload]')`.
  * @returns {NodeList}
  */
-function aload(nodes) {
+module.exports = function aload(nodes) {
   'use strict';
 
   nodes = nodes || window.document.querySelectorAll('[data-aload]');
