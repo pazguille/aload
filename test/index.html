@@ -1,13 +1,25 @@
 <!doctype html>
 <html>
-<head>
-  <title>Aload Test</title>
-</head>
-<body>
-  <img data-aload="http://upload.wikimedia.org/wikipedia/commons/2/22/Turkish_Van_Cat.jpg" width="400" height="400">
-  <script src="../aload.js"></script>
-  <script>
-    aload();
-  </script>
-</body>
+  <head>
+    <title>Aload Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/1.13.0/mocha.min.css">
+  </head>
+  <body>
+    <img data-aload="http://upload.wikimedia.org/wikipedia/commons/2/22/Turkish_Van_Cat.jpg" width="400" height="400">
+    <div id="mocha"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/1.13.0/mocha.min.js"></script>
+    <script>
+      mocha.setup('bdd');
+      function assert(expr, msg) {
+        if (!expr) throw new Error(msg || 'failed');
+      }
+    </script>
+    <script src="../dist/aload.js"></script>
+    <script src="test.js"></script>
+    <script>
+      window.onload = function() {
+        var runner = mocha.run();
+      };
+    </script>
+  </body>
 </html>
