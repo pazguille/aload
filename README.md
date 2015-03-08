@@ -157,7 +157,7 @@ For example, to show images when JavaScript is not enabled you should include th
 
 ### NPM tasks
 
-- `npm run dist`: Creates a distrubution version of `aload`. You should find two files: `./dist/aload.js` and `./dist/aload.min.js`.
+- `npm run dist`: Creates a distribution version of `aload`. You should find two files: `./dist/aload.js` and `./dist/aload.min.js`.
 - `npm test`: Runs mocha tests.
 
 ## Made with ❤ by
