@@ -1,6 +1,6 @@
 # aload.js [![Build Status](https://secure.travis-ci.org/pazguille/aload.png)](http://travis-ci.org/pazguille/aload) [![devDependency Status](https://david-dm.org/pazguille/aload/dev-status.png)](https://david-dm.org/pazguille/aload#info=devDependencies)
 
-> Loads images, background images, scripts, styles, iframes, videos and audios asynchronously (just 260 bytes).
+> Loads images, background images, scripts, styles, iframes, videos and audios asynchronously (just 241 bytes).
 
 ## API
 
