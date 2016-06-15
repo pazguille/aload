@@ -16,11 +16,11 @@ aload();
 
     $ npm install aload
 
-As standalone just include `aload` function (just 260 bytes) inline into your HTML file:
+As standalone just include `aload` function (just 241 bytes) inline into your HTML file:
 
 ```html
 <script>
-  function aload(t){"use strict";t=t||window.document.querySelectorAll("[data-aload]"),void 0===t.length&&(t=[t]);var a,e=0,r=t.length;for(e;r>e;e+=1)a=t[e],a["LINK"!==a.tagName?"src":"href"]=a.getAttribute("data-aload"),a.removeAttribute("data-aload");return t}
+  function aload(t){"use strict";var e="data-aload";return t=t||window.document.querySelectorAll("["+e+"]"),void 0===t.length&&(t=[t]),[].forEach.call(t,function(t){t["LINK"!==t.tagName?"src":"href"]=t.getAttribute(e),t.removeAttribute(e)}),t}
 </script>
 ```
 
