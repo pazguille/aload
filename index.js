@@ -6,21 +6,18 @@
 module.exports = function aload(nodes) {
   'use strict';
 
-  nodes = nodes || window.document.querySelectorAll('[data-aload]');
+  var attribute = 'data-aload';
+
+  nodes = nodes || window.document.querySelectorAll('[' + attribute + ']');
 
   if (nodes.length === undefined) {
     nodes = [nodes];
   }
 
-  var i = 0,
-      len = nodes.length,
-      node;
-
-  for (i; i < len; i += 1) {
-    node = nodes[i];
-    node[ node.tagName !== 'LINK' ? 'src' : 'href' ] = node.getAttribute('data-aload');
-    node.removeAttribute('data-aload');
-  }
+  [].forEach.call(nodes, function (node) {
+    node[ node.tagName !== 'LINK' ? 'src' : 'href' ] = node.getAttribute(attribute);
+    node.removeAttribute(attribute);
+  });
 
   return nodes;
 }
