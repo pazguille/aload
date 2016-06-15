@@ -1,10 +1,10 @@
 {
   "name": "aload",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Loads images, scripts, styles, iframes, videos and audios asynchronously.",
   "author": "@pazguille <guille87paz@gmail.com>",
   "scripts": {
-    "dist": "gulp",
+    "dist": "node_modules/.bin/gulp",
     "test": "npm run dist && node_modules/.bin/_mocha"
   },
   "repository": "git@github.com:pazguille/aload.git",
