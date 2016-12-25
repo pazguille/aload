@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/1.13.0/mocha.min.js"></script>
     <script>
       mocha.setup('bdd');
+      var exports = null;
       function assert(expr, msg) {
         if (!expr) throw new Error(msg || 'failed');
       }

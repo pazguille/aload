@@ -1,27 +1,24 @@
-'use strict';
-
 /**
  * Module Dependencies.
  */
-var fs = require('fs');
-var jsdom = require('jsdom');
-var assert = require('better-assert');
+if (exports) {
+  var fs = require('fs');
+  var jsdom = require('jsdom').jsdom;
+  var assert = require('better-assert');
 
-/**
- * Load test html
- */
-var html = fs.readFileSync('./test/index.html', 'utf-8');
+  /**
+   * Load test html
+   */
+  var html = fs.readFileSync('./test/index.html', 'utf-8');
 
-/**
- * Define window and document.
- */
-var window = jsdom.jsdom(html).parentWindow;
-var document = window.document;
+  /**
+   * Define window and document.
+   */
+  var document = jsdom(html);
+  window = document.defaultView;
 
-/**
- * aload
- */
-var aload = require('../');
+  var aload = require('../');
+}
 
 /**
  * Tests
