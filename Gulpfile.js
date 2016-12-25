@@ -35,22 +35,25 @@ mkdirp('./dist');
  * Build task
  */
 gulp.task('build', function() {
-  mkdirp('./dist');
   gulp.src('./index.js')
     .pipe(header(prefix, { 'pkg' : pkg }))
     .pipe(replace('module.exports = ', ''))
     .pipe(rename(pkg.name + '.js'))
     .pipe(gulp.dest('./dist/'))
+});
 
-    /**
-     * Min task
-     */
+/**
+ * Min task
+ */
+gulp.task('min', function() {
+  gulp.src('./dist/' + pkg.name + '.js')
     .pipe(ugifyjs())
     .pipe(rename(pkg.name + '.min.js'))
-    .pipe(gulp.dest('./dist/'))
+    .pipe(gulp.dest('./dist/'));
 });
 
 /**
  * Register tasks
  */
 gulp.task('default', ['build']);
+gulp.task('dist', ['build', 'min']);

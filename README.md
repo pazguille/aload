@@ -1,4 +1,6 @@
-# aload.js [![Build Status](https://secure.travis-ci.org/pazguille/aload.png)](http://travis-ci.org/pazguille/aload) [![devDependency Status](https://david-dm.org/pazguille/aload/dev-status.png)](https://david-dm.org/pazguille/aload#info=devDependencies)
+# aload.js
+
+[![NPM version][npm-image]][npm-link] [![License][lic-image]][npm-link] [![Build status][travis-image]][travis-link] [![Coverage Status][coverage-image]][coverage-link] [![Dependency status][deps-image]][deps-link] [![devDependency status][devdeps-image]][devdeps-link] [![downloads][dt-image]][npm-link]
 
 > Loads images, background images, scripts, styles, iframes, videos and audios asynchronously (just 241 bytes).
 
@@ -15,6 +17,10 @@ aload();
 ## Installation
 
     $ npm install aload
+
+    $ bower install aload
+
+*Note:* I recommend to use `aload` inline in your HTML.
 
 As standalone just include `aload` function (just 241 bytes) inline into your HTML file:
 
@@ -160,13 +166,26 @@ For example, to show images when JavaScript is not enabled you should include th
 - `npm run dist`: Creates a distribution version of `aload`. You should find two files: `./dist/aload.js` and `./dist/aload.min.js`.
 - `npm test`: Runs mocha tests.
 
-## Made with ❤ by
+## With :heart: by
 
 - Guille Paz (Front-end developer | Web standards lover)
 - E-mail: [guille87paz@gmail.com](mailto:guille87paz@gmail.com)
 - Twitter: [@pazguille](http://twitter.com/pazguille)
-- Web: [http://pazguille.me](http://pazguille.me)
+- Web: [https://pazguille.me](https://pazguille.me)
 
 ## License
 
-MIT license. Copyright © 2015.
+MIT license. Copyright © 2016.
+
+[npm-image]: https://img.shields.io/npm/v/aload.svg
+[lic-image]: https://img.shields.io/npm/l/aload.svg
+[npm-link]: https://npmjs.org/package/aload
+[travis-image]: https://img.shields.io/travis/pazguille/aload.svg
+[travis-link]: https://travis-ci.org/pazguille/aload
+[deps-image]: https://img.shields.io/david/pazguille/aload.svg
+[deps-link]: https://david-dm.org/pazguille/aload
+[devdeps-image]: https://img.shields.io/david/dev/pazguille/aload.svg
+[devdeps-link]: https://david-dm.org/pazguille/aload#info=devDependencies
+[dt-image]: https://img.shields.io/npm/dt/aload.svg
+[coverage-image]: https://img.shields.io/coveralls/pazguille/aload.svg
+[coverage-link]: https://coveralls.io/github/pazguille/aload

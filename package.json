@@ -1,24 +1,28 @@
 {
   "name": "aload",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Loads images, scripts, styles, iframes, videos and audios asynchronously.",
   "author": "@pazguille <guille87paz@gmail.com>",
   "scripts": {
-    "dist": "node_modules/.bin/gulp",
-    "test": "npm run dist && node_modules/.bin/_mocha"
+    "build": "node_modules/.bin/gulp",
+    "dist": "node_modules/.bin/gulp dist",
+    "test": "npm run build && NODE_ENV=test istanbul cover _mocha -- ./test/*.spec.js",
+    "lint": "eslint index.js"
   },
   "repository": "git@github.com:pazguille/aload.git",
   "dependencies": {},
   "devDependencies": {
+    "better-assert": "1.0.2",
+    "coveralls": "^2.11.15",
     "gulp": "3.9.1",
     "gulp-header": "1.8.8",
     "gulp-rename": "1.2.2",
     "gulp-replace": "0.5.4",
     "gulp-uglify": "2.0.0",
-    "mkdirp": "0.5.1",
+    "istanbul": "^0.4.5",
     "jsdom": "9.9.1",
-    "mocha": "3.2.0",
-    "better-assert": "1.0.2"
+    "mkdirp": "0.5.1",
+    "mocha": "^3.2.0"
   },
   "keywords": [
     "aload",
