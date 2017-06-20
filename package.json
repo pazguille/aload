@@ -17,7 +17,7 @@
     "gulp": "3.9.1",
     "gulp-header": "1.8.8",
     "gulp-rename": "1.2.2",
-    "gulp-replace": "0.5.4",
+    "gulp-replace": "0.6.1",
     "gulp-uglify": "2.0.1",
     "istanbul": "^0.4.5",
     "jsdom": "9.10.0",
