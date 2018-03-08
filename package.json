@@ -15,7 +15,7 @@
     "better-assert": "1.0.2",
     "coveralls": "^2.11.15",
     "gulp": "3.9.1",
-    "gulp-header": "1.8.8",
+    "gulp-header": "2.0.2",
     "gulp-rename": "1.2.2",
     "gulp-replace": "0.5.4",
     "gulp-uglify": "2.0.1",
