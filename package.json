@@ -16,7 +16,7 @@
     "coveralls": "^2.11.15",
     "gulp": "3.9.1",
     "gulp-header": "1.8.8",
-    "gulp-rename": "1.2.2",
+    "gulp-rename": "1.4.0",
     "gulp-replace": "0.5.4",
     "gulp-uglify": "2.0.1",
     "istanbul": "^0.4.5",
