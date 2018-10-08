@@ -20,7 +20,7 @@
     "gulp-replace": "0.5.4",
     "gulp-uglify": "2.0.1",
     "istanbul": "^0.4.5",
-    "jsdom": "9.10.0",
+    "jsdom": "12.2.0",
     "mkdirp": "0.5.1",
     "mocha": "^3.2.0"
   },
